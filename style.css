@@ -4,6 +4,10 @@
   body {
     font-size: 16px;
   }
+  .project-tile:hover {
+    background: red;
+    min-width: 500px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -50,9 +54,33 @@ navbar {
 
 .project-tile {
   margin: 5px;
+  flex-basis: auto;
   flex-grow: 1;
-  min-width: 300px;
+  min-width: 200px;
   text-align: center;
   height: 300px;
   background: #ffffff;
+  overflow: hidden;
+  transition: all 1.5s ease-in-out;
+}
+
+.tile-image {
+  width: 200px;
+}
+
+img {
+  height: 300px;
+  overflow: hidden;
+}
+
+a {
+  color: black;
+}
+
+#random-quote-machine {
+  background-color: #fd665c;
+}
+
+#drum-machine {
+  background-color: #413043;
 }
